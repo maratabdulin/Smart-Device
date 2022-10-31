@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: rgba($color-dark, 0.8);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -40,7 +40,7 @@
     min-height: 100%;
     padding: 60px 40px;
 
-    @include vp-767 {
+    @include vp-768 {
       padding: 60px 16px;
     }
   }
@@ -62,9 +62,9 @@
     width: 600px;
     padding: 40px;
 
-    background-color: $color-default-white;
+    background-color: $color-white;
 
-    @include vp-767 {
+    @include vp-768 {
       width: 100%;
       padding: 20px;
     }
@@ -95,7 +95,7 @@
     .modal__content {
       width: auto;
 
-      @include vp-767 {
+      @include vp-768 {
         width: 100%;
       }
     }
