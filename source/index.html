@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header>
-  <div class="container">
+<header class="header">
+  <div class="container header__container">
     <a href="" class="header__logo">
       <svg class="header__image" width="35" height="35">
         <use xlink:href="img/sprite_auto.svg#logo"></use>
@@ -20,30 +20,36 @@
         <div class="logo__subtitle">умные технологии</div>
       </div>
     </a>
-    <button class="header__user-nav" type="button">
-      <svg class="header__icon" width="21" height="20">
-        <use xlink:href="img/sprite_auto.svg#mail"></use>
-      </svg>
-      <span class="user-nav__text">info@sd.ru</span>
-    </button>
-    <button class="header__user-nav" type="button">
-      <svg class="header__icon" width="21" height="20">
-        <use xlink:href="img/sprite_auto.svg#phone"></use>
-      </svg>
-      <span class="user-nav__text">+7 (495) 000 52 52</span>
-    </button>
+    <div class="header__contacts">
+      <button class="header__user-nav" type="button">
+        <svg class="header__icon" width="21" height="20">
+          <use xlink:href="img/sprite_auto.svg#mail"></use>
+        </svg>
+        <span class="user-nav__text">info@sd.ru</span>
+      </button>
+      <button class="header__user-nav" type="button">
+        <svg class="header__icon" width="21" height="20">
+          <use xlink:href="img/sprite_auto.svg#phone"></use>
+        </svg>
+        <span class="user-nav__text">+7 (495) 000 52 52</span>
+      </button>
+    </div>
+
     <button class="header__order-button">
       Заказать звонок
     </button>
   </div>
 </header>
-<main>
+<main class="main">
   <h1 class="visually-hidden">Печатные платы. Производство и монтаж, поставка комплектующих, блоков и модулей</h1>
-  <section class="main">
-    <div class="main__container">
-      <h2 class="main__title">Печатные платы</h2>
-      <div class="main__content">производство и монтаж, поставка комплектующих, блоков и модулей</div>
-      <button class="main__button" type="button">бесплатная консультация</button>
+  <section class="main-header">
+    <div class="main-header__container">
+      <h2 class="main-header__title">Печатные платы</h2>
+      <div class="main-header__content">производство и монтаж, поставка комплектующих, блоков и модулей</div>
+      <button class="main-header__button" type="button">
+        <span class="main-header__button--mobile">бесплатная консультация</span>
+        <span class="main-header__button--tablet">Получить бесплатную консультацию</span>
+      </button>
     </div>
   </section>
   <section class="features">
