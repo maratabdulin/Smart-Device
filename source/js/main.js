@@ -1,15 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-
-// ---------------------------------
+import {hideTextAboutButton} from './modules/about/about.js';
 
 window.addEventListener('DOMContentLoaded', () => {
-
   // Utils
-  // ---------------------------------
-
   iosVhFix();
-
+  hideTextAboutButton();
   // Modules
   // ---------------------------------
 

@@ -1,0 +1,108 @@
+.about {
+  position: relative;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px 80px;
+
+  @include vp-768 {
+    padding: 0 50px 80px 225px;
+  }
+
+  @include vp-1280 {
+    width: $vp-1280;
+    margin: 0 auto 100px;
+    padding: 0 0 0 250px;
+    min-height: 320px;
+  }
+}
+
+.about__mask {
+  display: none;
+  position: absolute;
+  top: 103px;
+  left: -30px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 156px;
+  line-height: 120px;
+  color: $color-main-blue;
+  transform: rotate(-90deg);
+  background-image: url('./../img/2022-mask-image.jpg');
+  object-fit: cover;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  @include vp-768 {
+    display: block;
+  }
+
+  @include vp-1280 {
+    display: block;
+    left: -70px;
+  }
+}
+
+.about__title {
+  margin: 0 0 15px 0;
+  font-family: $ff-roboto-condensed;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 140%;
+  color: $color-dark;
+
+  @include vp-768 {
+    font-size: 36px;
+  }
+}
+
+.about__content {
+  margin: 0 0 20px 0;
+  font-family: $ff-pt-mono;
+  font-size: 14px;
+  line-height: 19px;
+  color: $color-dark;
+
+  @include vp-768 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.is-closed[data-content-to-hide] {
+  display: none;
+}
+
+.about__button {
+  box-sizing: border-box;
+  max-width: 160px;
+  padding: 8px 15px 9px;
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $color-main-blue;
+  border: 1px solid $color-main-blue;
+  border-radius: 3px;
+  outline: none;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @include vp-768 {
+    max-width: 180px;
+    padding: 13px 15px 14px;
+  }
+}
