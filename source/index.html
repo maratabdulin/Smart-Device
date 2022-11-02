@@ -43,6 +43,25 @@
 <main class="main">
   <h1 class="visually-hidden">Печатные платы. Производство и монтаж, поставка комплектующих, блоков и модулей</h1>
   <section class="main-header">
+    <picture class="main-header__background-picture">
+      <source media="(min-width: 1220px)"
+              srcset="img/main-background-desktop.webp 1x, img/main-background-desktop@2x.webp 2x"
+              type="image/webp"/>
+      <source media="(min-width: 768px)"
+              srcset="img/main-background-tablet.webp 1x, img/main-background-tablet@2x.webp 2x"
+              type="image/webp"/>
+      <source media="(min-width: 320px)"
+              srcset="img/main-background-mobile.webp 1x, img/main-background-mobile@2x.webp 2x"
+              type="image/webp"/>
+      <source media="(min-width: 1220px)"
+              srcset="img/main-background-desktop.jpg 1x, img/main-background-desktop@2x.jpg 2x"/>
+      <source media="(min-width: 768px)"
+              srcset="img/main-background-tablet.jpg 1x, img/main-background-tablet@2x.jpg 2x"/>
+      <img class="main-header__background" src="img/main-background-mobile.jpg"
+           srcset="img/main-background-mobile@2x.jpg 2x"
+           width="320"
+           height="560" alt="Background image"/>
+    </picture>
     <div class="main-header__container">
       <h2 class="main-header__title">Печатные платы</h2>
       <div class="main-header__content">производство и монтаж, поставка комплектующих, блоков и модулей</div>
@@ -56,40 +75,40 @@
     <div class="features__container">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="features__list">
-        <li class="features__item">
-          <svg class="features__icon" width="35" height="35">
+        <li class="features__item" tabindex="0">
+          <svg class="features__icon" width="30" height="30">
             <use xlink:href="img/sprite_auto.svg#features-stopwatch"></use>
           </svg>
-          <h3 class="item__title">Оперативные сроки</h3>
-          <div class="item__content">
+          <h3 class="features__title">Оперативные сроки</h3>
+          <div class="features__content">
             Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы
             плат и комплектующих в самые короткие сроки
           </div>
         </li>
-        <li>
-          <svg class="features__icon" width="35" height="35">
+        <li class="features__item" tabindex="0">
+          <svg class="features__icon" width="30" height="30">
             <use xlink:href="img/sprite_auto.svg#features-hired"></use>
           </svg>
-          <h3 class="item__title">Крупные поставщики</h3>
-          <div class="item__content">
+          <h3 class="features__title">Крупные поставщики</h3>
+          <div class="features__content">
             Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.
           </div>
         </li>
-        <li>
-          <svg class="features__icon" width="35" height="35">
+        <li class="features__item" tabindex="0">
+          <svg class="features__icon" width="30" height="30">
             <use xlink:href="img/sprite_auto.svg#features-detective"></use>
           </svg>
-          <h3 class="item__title">Полная конфиденциальность</h3>
-          <div class="item__content">
+          <h3 class="features__title">Полная конфиденциальность</h3>
+          <div class="features__content">
             По желанию клиента мы обеспечиваем полную конфиденциальность.
           </div>
         </li>
-        <li>
-          <svg class="features__icon" width="35" height="35">
+        <li class="features__item" tabindex="0">
+          <svg class="features__icon" width="30" height="30">
             <use xlink:href="img/sprite_auto.svg#features-tag"></use>
           </svg>
-          <h3 class="item__title">Персонализация стоимости</h3>
-          <div class="item__content">
+          <h3 class="features__title">Персонализация стоимости</h3>
+          <div class="features__content">
             Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
           </div>
         </li>
