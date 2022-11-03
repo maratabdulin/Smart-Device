@@ -24,7 +24,6 @@
   @include vp-768 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
   }
 }
 
@@ -37,7 +36,7 @@
   display: flex;
   flex-direction: column;
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     left: -1px;
@@ -47,7 +46,8 @@
     background-color: $color-main-blue;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $color-main-blue;
     color: $color-light;
     border-color: $color-main-blue;
@@ -57,7 +57,7 @@
     }
 
     & .features__title,
-    & .features__content{
+    & .features__content {
       color: $color-light;
     }
   }
@@ -89,7 +89,6 @@
   @include vp-768 {
     font-size: 24px;
   }
-
 }
 
 .features__content {

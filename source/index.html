@@ -133,29 +133,97 @@
   </section>
   <section class="services">
     <div class="services__container">
-      <h2 class="services__title">Smart Device предлагает следующие товары и услуги</h2>
+      <h2 class="services__title">
+        <span class="services__title--tablet">
+          Smart Device предлагает следующие товары и услуги
+        </span>
+        <span class="services__title--mobile">
+          Товары и услуги<br/>
+          Smart Device
+        </span>
+
+      </h2>
       <ul class="services__list">
         <li>
           <a class="services__item" href="#">
-            <h3 class="services__title">Производство печатных плат</h3>
+            <picture class="services__picture">
+              <source media="(min-width: 1220px)"
+                      srcset="img/cards-1-desktop.webp 1x, img/cards-1-desktop@2x.webp 2x"
+                      type="image/webp"/>
+              <source media="(min-width: 768px)"
+                      srcset="img/cards-1-tablet.webp 1x, img/cards-1-tablet@2x.webp 2x"
+                      type="image/webp"/>
+              <source media="(min-width: 320px)"
+                      srcset="img/cards-1-mobile.webp 1x, img/cards-1-mobile@2x.webp 2x"
+                      type="image/webp"/>
+              <source media="(min-width: 1220px)"
+                      srcset="img/cards-1-desktop.jpg 1x, img/cards-1-desktop@2x.jpg 2x"/>
+              <source media="(min-width: 768px)"
+                      srcset="img/cards-1-tablet.jpg 1x, img/cards-1-tablet@2x.jpg 2x"/>
+              <img class="services__image" src="img/cards-1-mobile.jpg"
+                   srcset="img/cards-1-mobile@2x.jpg 2x" width="270" height="250" alt="изображение сервиса"/>
+            </picture>
+            <h3 class="services__item-title">Производство печатных плат</h3>
             <button type="button" class="services__button">
+              <svg class="services__arrow"  width="3" height="5">
+                <use xlink:href="img/sprite_auto.svg#v-arrow"></use>
+              </svg>
               <span class="visually-hidden">Перейти на страницу товара</span>
             </button>
           </a>
         </li>
         <li>
-        <li>
           <a class="services__item" href="#">
-            <h3 class="services__title">Монтаж печатных плат</h3>
+            <picture class="services__picture">
+              <source media="(min-width: 1220px)"
+                      srcset="img/cards-2-desktop.webp 1x, img/cards-2-desktop@2x.webp 2x"
+                      type="image/webp"/>
+              <source media="(min-width: 768px)"
+                      srcset="img/cards-2-tablet.webp 1x, img/cards-2-tablet@2x.webp 2x"
+                      type="image/webp"/>
+              <source media="(min-width: 320px)"
+                      srcset="img/cards-2-mobile.webp 1x, img/cards-2-mobile@2x.webp 2x"
+                      type="image/webp"/>
+              <source media="(min-width: 1220px)"
+                      srcset="img/cards-2-desktop.jpg 1x, img/cards-2-desktop@2x.jpg 2x"/>
+              <source media="(min-width: 768px)"
+                      srcset="img/cards-2-tablet.jpg 1x, img/cards-2-tablet@2x.jpg 2x"/>
+              <img class="services__image" src="img/cards-2-mobile.jpg"
+                   srcset="img/cards-2-mobile@2x.jpg 2x" width="270" height="250" alt="изображение сервиса"/>
+            </picture>
+            <h3 class="services__item-title">Монтаж печатных плат</h3>
             <button type="button" class="services__button">
+              <svg class="services__arrow"  width="3" height="5">
+                <use xlink:href="img/sprite_auto.svg#v-arrow"></use>
+              </svg>
               <span class="visually-hidden">Перейти на страницу товара</span>
             </button>
           </a>
         </li>
         <li>
           <a class="services__item" href="#">
-            <h3 class="services__title">Комплектующие для светотехники</h3>
+            <picture class="services__picture">
+              <source media="(min-width: 1220px)"
+                      srcset="img/cards-3-desktop.webp 1x, img/cards-3-desktop@2x.webp 2x"
+                      type="image/webp"/>
+              <source media="(min-width: 768px)"
+                      srcset="img/cards-3-tablet.webp 1x, img/cards-3-tablet@2x.webp 2x"
+                      type="image/webp"/>
+              <source media="(min-width: 320px)"
+                      srcset="img/cards-3-mobile.webp 1x, img/cards-3-mobile@2x.webp 2x"
+                      type="image/webp"/>
+              <source media="(min-width: 1220px)"
+                      srcset="img/cards-3-desktop.jpg 1x, img/cards-3-desktop@2x.jpg 2x"/>
+              <source media="(min-width: 768px)"
+                      srcset="img/cards-3-tablet.jpg 1x, img/cards-3-tablet@2x.jpg 2x"/>
+              <img class="services__image" src="img/cards-3-mobile.jpg"
+                   srcset="img/cards-3-mobile@2x.jpg 2x" width="270" height="250" alt="изображение сервиса"/>
+            </picture>
+            <h3 class="services__item-title">Комплектующие для светотехники</h3>
             <button type="button" class="services__button">
+              <svg class="services__arrow" width="3" height="5">
+                <use xlink:href="img/sprite_auto.svg#v-arrow"></use>
+              </svg>
               <span class="visually-hidden">Перейти на страницу товара</span>
             </button>
           </a>

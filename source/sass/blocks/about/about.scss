@@ -30,11 +30,11 @@
   line-height: 120px;
   color: $color-main-blue;
   transform: rotate(-90deg);
-  background-image: url('./../img/2022-mask-image.jpg');
+  background-image: url("./../img/2022-mask-image.jpg");
   object-fit: cover;
   background-size: cover;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  background-clip: text;
 
   @include vp-768 {
     display: block;

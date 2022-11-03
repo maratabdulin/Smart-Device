@@ -1,0 +1,153 @@
+.services {
+  width: 100%;
+  background-color: $color-dark;
+}
+
+.services__container {
+  padding: 50px 25px 85px;
+
+  @include vp-768 {
+    padding: 50px 50px 75px;
+  }
+
+  @include vp-1280 {
+    width: $vp-1280;
+    margin: 0 auto;
+    padding: 70px 0 140px;
+  }
+}
+
+.services__list {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include vp-1280 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.services__title {
+  margin: 0 0 40px 0;
+  font-family: $ff-roboto-condensed;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 140%;
+  color: $color-white;
+
+  &--tablet {
+    display: none;
+  }
+
+  @include vp-768 {
+    font-size: 36px;
+    line-height: 51px;
+
+    &--tablet {
+      display: inline;
+    }
+    &--mobile {
+      display: none;
+    }
+  }
+}
+
+.services__item {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  min-height: 250px;
+  padding: 30px;
+  outline: none;
+
+  @include vp-768 {
+    padding: 45px;
+  }
+
+  @include vp-1280 {
+    width: 350px;
+    height: 650px;
+  }
+}
+
+.services__picture {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+//  width: 100%;
+//  height: 100%;
+  content: "";
+  mask-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 100%);
+
+  @include vp-1280 {
+    height: auto;
+  }
+}
+
+.services__image {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.services__item-title {
+  position: relative;
+  z-index: 4;
+  max-width: 150px;
+  margin: 0;
+  font-family: $ff-roboto-condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $color-white;
+
+  @include vp-768 {
+    font-size: 20px;
+  }
+}
+
+.services__button {
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 3px 0 0 0;
+  outline: none;
+  background-color: $color-main-blue;
+
+  &:hover, &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @include vp-768 {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.services__arrow {
+  width: 4px;
+  height: 8px;
+}
