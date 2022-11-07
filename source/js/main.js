@@ -40,3 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
+
+$(document).ready(function () {
+  $('[data-phone-input]').mask('+7(000-000-0000)');
+});
