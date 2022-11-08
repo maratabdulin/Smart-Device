@@ -272,21 +272,21 @@
     </div>
   </section>
 </main>
-<footer>
-  <div class="container">
+<footer class="footer">
+  <div class="footer__container">
     <a href="" class="footer__logo">
-      <svg class="footer__image" width="35" height="35">
+      <svg class="footer-logo__image" width="35" height="35">
         <use xlink:href="img/sprite_auto.svg#logo"></use>
       </svg>
-      <div class="logo__description">
+      <div class="footer-logo__description">
         <div class="logo__title">Smart Device</div>
         <div class="logo__subtitle">умные технологии</div>
       </div>
     </a>
-    <ul class="social__list">
+    <ul class="footer__social">
       <li class="social__item">
         <a href="" class="social__link">
-          <svg class="social__icon" width="20" height="20" viewBox="0 0 20 20">
+          <svg class="social__icon" width="30" height="30">
             <use xlink:href="img/sprite_auto.svg#OK"></use>
           </svg>
           <span class="visually-hidden">We are in classmates</span>
@@ -310,34 +310,40 @@
       </li>
     </ul>
     <div class="footer__nav">
+      <button class="footer__toggle nojs" type="button" data-nav-site-button>
+        <span class="visually-hidden">Open menu</span>
+      </button>
       <div class="footer__title">Разделы сайта</div>
-      <ul class="footer__list">
+      <ul class="footer__list nojs" data-nav-site-list>
         <li class="footer__item">
-          <a href="#">О Компании</a>
+          <a class="footer__link" href="#">О Компании</a>
         </li>
         <li class="footer__item">
-          <a href="#">Продукты</a>
+          <a class="footer__link" href="#">Продукты</a>
         </li>
         <li class="footer__item">
-          <a href="#">Производство печатных плат</a>
+          <a class="footer__link" href="#">Производство печатных плат</a>
         </li>
         <li class="footer__item">
-          <a href="#">Монтаж печатных плат</a>
+          <a class="footer__link" href="#">Монтаж печатных плат</a>
         </li>
         <li class="footer__item">
-          <a href="#">Комплектующие</a>
+          <a class="footer__link" href="#">Комплектующие</a>
         </li>
         <li class="footer__item">
-          <a href="#">Доставка</a>
+          <a class="footer__link" href="#">Доставка</a>
         </li>
         <li class="footer__item">
-          <a href="#">Контакты</a>
+          <a class="footer__link" href="#">Контакты</a>
         </li>
       </ul>
     </div>
-    <div class="footer__nav">
+    <div class="footer__nav footer__nav--address">
+      <button class="footer__toggle nojs" type="button" data-nav-address-button>
+      <span class="visually-hidden">Open menu</span>
+      </button>
       <div class="footer__title">Наш офис</div>
-      <ul class="footer__list">
+      <ul class="footer__list nojs" data-nav-address-list>
         <li class="footer__item">
           г. Мытищи, Олимпийский проспект, д.10
         </li>
@@ -353,7 +359,6 @@
       </ul>
     </div>
   </div>
-
 </footer>
 
 <!-- Модалки -->

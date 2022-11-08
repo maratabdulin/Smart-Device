@@ -1,11 +1,15 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {hideTextAboutButton} from './modules/about/about.js';
+import {phoneMask} from './utils/phone-mask.js';
+import {footerAccordion} from './utils/footer-accordion.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
   iosVhFix();
   hideTextAboutButton();
+  phoneMask();
+  footerAccordion();
   // Modules
   // ---------------------------------
 
@@ -40,7 +44,3 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
-
-$(document).ready(function () {
-  $('[data-phone-input]').mask('+7(000-000-0000)');
-});
