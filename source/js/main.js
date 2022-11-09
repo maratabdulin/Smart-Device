@@ -1,22 +1,22 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
 import {hideTextAboutButton} from './modules/about/about.js';
 import {phoneMask} from './utils/phone-mask.js';
 import {footerAccordion} from './utils/footer-accordion.js';
+import {initModal} from './modules/modals/modals.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
   iosVhFix();
-  hideTextAboutButton();
-  phoneMask();
-  footerAccordion();
+  initModal();
   // Modules
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
+    hideTextAboutButton();
+    phoneMask();
+    footerAccordion();
   });
 });
 
