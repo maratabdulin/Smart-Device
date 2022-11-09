@@ -1,6 +1,5 @@
 .footer {
   background-color: $color-dark;
-
 }
 
 .footer__container {
@@ -27,8 +26,8 @@
     grid-template-rows: 80px auto;
     padding: 55px 0;
     grid-template-areas:
-    "logo . site address"
-    "social . site address";
+      "logo . site address"
+      "social . site address";
     gap: 0;
   }
 }
@@ -151,7 +150,6 @@
     padding: 0;
     margin-bottom: 20px;
   }
-
 }
 
 .footer__item {
@@ -203,8 +201,8 @@
   border: none;
   background-color: transparent;
 
-  &:after,
-  &:before {
+  &::after,
+  &::before {
     position: absolute;
     top: 7px;
     left: 0;
@@ -214,7 +212,7 @@
     content: "";
   }
 
-  &.isClosed:before {
+  &.isClosed::before {
     transform: rotate(90deg);
   }
 

@@ -14,14 +14,14 @@ const clean = () => del('build');
 const syncServer = () => {
   server.init({
     server: 'build/',
-    index: 'sitemap.html',
+    index: 'index.html',
     notify: false,
     open: true,
     cors: true,
     ui: false,
   });
 
-  gulp.watch('source/**.html', gulp.series(copy, refresh));
+  gulp.watch('source/**.{html,json,ico}', gulp.series(copy, refresh));
   gulp.watch('source/sass/**/*.{scss,sass}', streamStyles);
   gulp.watch('source/js/**/*.{js,json}', gulp.series(js, refresh));
   gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));

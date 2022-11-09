@@ -24,6 +24,4 @@ export const initModal = () => {
   modal.addEventListener('click', function (e) {
     e.stopPropagation();
   });
-
 };
-
